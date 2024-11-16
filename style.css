@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background-color: yellowgreen;
+    background: linear-gradient(90deg, rgb(144,238,144), rgb(122, 218, 122));
     display: flex;
     width: 100%;
     justify-content: center;
@@ -42,7 +42,7 @@ li {
 
 a {
     text-decoration: none;
-    color: #f3f9f3;
+    color: #0d0d0d;
 }
 
 main {
@@ -54,11 +54,17 @@ hr {
     box-sizing: content-box;
     height: 1;
     overflow: visible;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 0.5rem 0;
     border: 0;
     border-top: 1px solid rgba(255, 253, 253, 1);
 }
+
+.main-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
 
 @media (max-width: 768px) {
     h2 {
