@@ -40,7 +40,7 @@ p {
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 16px;
+    padding: 2rem;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -96,16 +96,37 @@ footer div {
 }
 
 @media (max-width: 480px) {
+    
     h2 {
         font-size: 1.8rem; 
         letter-spacing: 0.1rem; 
     }
 
     p {
-        padding: 16px;
+        padding: 2rem;
     }
 
     footer {
         font-size: 0.9rem; 
+    }
+}
+
+@media (max-width: 320) {
+    body {
+        padding: 0;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.0rem;
+        letter-spacing: 0.05rem;
+    }
+
+    p {
+        padding: 1rem;
+    }
+
+    footer {
+        font-size: 0.5rem;
     }
 }
