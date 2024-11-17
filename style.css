@@ -84,9 +84,16 @@ hr {
     font-style: normal;
 }
 
+.subtitle {
+    font-family: 'CorelDraw';
+    font-weight: 600;
+    font-style: normal;
+}
+
+
 
 /* Configurações SlideShow */
-/* Slideshow container */
+
 .slideshow-container {
     max-width: 1000px;
     position: relative;
