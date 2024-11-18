@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+.projList {
+    font-family: 'Roboto' ;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    left: 0;
+
+}
+
+h4 {
+    margin: 0;
+}
