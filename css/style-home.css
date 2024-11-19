@@ -5,6 +5,10 @@
     src: url(./assets/fonts/CORELDRAW.otf);
 }
 
+main {
+  height: 100vh;
+}
+
 .slideshow-container {
     max-width: 1000px;
     position: relative;
