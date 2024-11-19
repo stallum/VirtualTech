@@ -9,6 +9,9 @@ html {
 @font-face {
     font-family: CorelDraw;
     src: url(./assets/fonts/CORELDRAW.otf);
+}
+
+@font-face {
     font-family: Militech;
     src: url(./assets/fonts/militech_r_2019-04-13.otf);
 }
