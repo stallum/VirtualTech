@@ -5,6 +5,11 @@
     src: url(./assets/fonts/CORELDRAW.otf);
 }
 
+@font-face {
+  font-family: Militech;
+  src: url(./assets/fonts/militech_r_2019-04-13.otf);
+}
+
 main {
   height: 100vh;
 }
@@ -17,6 +22,7 @@ main {
   
   /* Hide the images by default */
   .mySlides {
+    font-family: 'Militech';
     display: none;
 }
   
