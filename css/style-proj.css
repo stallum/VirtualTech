@@ -93,3 +93,47 @@ h4 {
     margin: 0;
 }
 
+@media (max-width: 768px) {
+    .projList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    body {
+        height: auto;
+    }
+
+    .proj {
+        width: 16rem;
+        height: 4rem;
+        box-shadow: 0 0 16px #00000080;
+        background-color: rgb(31, 29, 29);
+        color: white;
+        display: flex;
+        position: relative;
+        border-radius: 4px;
+        flex-wrap: nowrap;
+    }
+
+    img {
+        width: 4rem;
+    }
+
+    .respons {
+        font-size: 14px;
+        height: 1rem;
+        line-height: 1rem;
+        width: 110px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .desc {
+    font-size: 10px;
+    height: 1rem;
+    line-height: 1rem;
+    width: 110px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+}
