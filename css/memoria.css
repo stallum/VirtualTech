@@ -1,0 +1,192 @@
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin: 30px auto;
+    width: 100%; 
+    max-width: 440px; 
+    padding: 0 10px; 
+    box-sizing: border-box;
+}
+
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #5fea47;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    transform: scale(1);
+    transition: transform 0.2s;
+}
+
+.card img {
+    width: 80%;
+    height: 80%;
+    display: none;
+    object-fit: cover;
+}
+
+.card.flipped {
+    background-color: #ecf0f1;
+}
+
+.card.flipped img {
+    display: block;
+}
+
+.card.matched {
+    background-color: #2ecc71;
+    pointer-events: none;
+    transform: scale(1.1);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+#timer {
+    font-size: 2 .5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #ffffff;
+    font-family: 'Montserrat'
+}
+
+
+#resetButton {
+    font-family: 'Militech';
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#resetButton:hover {
+    background-color: #c0392b;
+}
+
+#resetButton:active {
+    background-color: #e74c3c;
+}
+
+
+#gameMessage {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e67e22;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+
+@media (max-width: 600px) {
+    .game-board {
+        grid-template-columns: repeat(3, 120px);
+        width: 100%;
+        max-width: 350px;
+        padding: 10px; 
+    }
+
+    .card {
+        width: 70px;
+        height: 70px;
+    }
+
+    #timer {
+        font-size: 1.8rem;
+    }
+
+    #resetButton {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    #gameMessage {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 900px) {
+    .game-board {
+        grid-template-columns: repeat(3, 100px);
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .card {
+        width: 100px;
+        height: 100px;
+    }
+
+    #timer {
+        font-size: 1.8rem;
+    }
+
+    #resetButton {
+        font-size: 1rem;
+        padding: 9px 18px;
+    }
+
+    #gameMessage {
+        font-size: 1.3rem;
+        padding: 9px;
+    }
+}
+
+
+@media (min-width: 901px) {
+    .game-board {
+        grid-template-columns: repeat(6, 100px);
+        width: 100%;
+        max-width: 670px;
+    }
+
+    .card {
+        width: 100px;
+        height: 100px;
+    }
+
+    #timer {
+        font-size: 2.5rem;
+    }
+
+    #resetButton {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    #gameMessage {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    main {
+        padding-top: 140px;
+    }
+}
+
